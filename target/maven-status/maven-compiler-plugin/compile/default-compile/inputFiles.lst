@@ -1,0 +1,14 @@
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\constants\LibraryControllerConstants.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\controller\command\Command.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\controller\command\commands\EditBookCommand.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\model\impl\LibraryService.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\controller\command\commands\AddBookCommand.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\model\dao\impl\DaoImpl.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\controller\command\commands\AllBooksCommand.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\controller\command\commands\EndCommand.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\controller\command\CommandFactory.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\controller\LibraryManagingController.java
+d:\booklibrary\BookLibrary\src\main\java\Main.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\view\LibraryManagingView.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\model\dao\connection\ConnectionMySQL.java
+d:\booklibrary\BookLibrary\src\main\java\com\mycompany\booklibrary\controller\command\commands\RemoveBookCommand.java
