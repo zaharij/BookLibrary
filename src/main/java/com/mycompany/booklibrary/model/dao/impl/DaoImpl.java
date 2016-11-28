@@ -20,7 +20,7 @@ import static com.mycompany.booklibrary.constants.LibraryControllerConstants.*;
  * DaoImpl
  * @author Zakhar
  */
-public class DaoImpl {
+public class DaoImpl implements LibraryDAOInterface{
     private PreparedStatement preparedStatement;
     private final static String ADD_BOOK_SQL = "INSERT INTO library (author, book) VALUES (?,?);";
     private final static int ADD_BOOK_SQL_BOOK_NUMBER = 1;

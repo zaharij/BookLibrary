@@ -22,10 +22,7 @@ public class LibraryService {
     private Pattern bookPattern = Pattern.compile(BOOK_REG);
     private ArrayList<String> resultArray = new ArrayList<String>();
     private Pattern bookNamePattern = Pattern.compile(BOOK_REG);
-    private String bookName;
     private DaoImpl daoImpl = new DaoImpl();
-    //private String author;
-    //private String book;
     private Book book;
     
     /**
@@ -52,9 +49,9 @@ public class LibraryService {
     public ArrayList<String> removeBook(String inputedLine){
         Matcher matchetBookName = bookNamePattern.matcher(inputedLine);
         while (matchetBookName.find()) {
-            bookName = matchetBookName.group();
+            book.setBookName(matchetBookName.group());
         }
-        resultArray = daoImpl.select(bookName);
+        resultArray = daoImpl.select(book.getBookName());
         return resultArray;
     }
     
@@ -63,7 +60,8 @@ public class LibraryService {
      * @param bookId - book id
      */
     public String removeBook(int bookId){
-        daoImpl.removeBookFromDb(bookId);
+        book.setBookId(bookId);
+        daoImpl.removeBookFromDb(book.getBookId());
         return WAS_DELETED_MESSAGE;
     }
     
@@ -74,9 +72,9 @@ public class LibraryService {
     public ArrayList<String> editBook(String inputedLine){
         Matcher matchetBookName = bookNamePattern.matcher(inputedLine);
         while (matchetBookName.find()) {
-            bookName = matchetBookName.group();
+            book.setBookName(matchetBookName.group());
         }
-        resultArray = daoImpl.select(bookName);
+        resultArray = daoImpl.select(book.getBookName());
         return resultArray;
     }
     
@@ -86,7 +84,9 @@ public class LibraryService {
      * @param bookNameNew - new name
      */
     public String editBook(String bookNameNew, int bookId){
-        daoImpl.editBook(bookNameNew, bookId);
+        book.setBookName(bookNameNew);
+        book.setBookId(bookId);
+        daoImpl.editBook(book.getBookName(), book.getBookId());
         return WAS_EDITED_MESSAGE;
     }
     
